@@ -8,7 +8,7 @@ public class GameNetworkManagerWithMsf : GameNetworkManager
     public override void OnServerDisconnect(NetworkConnection conn)
     {
         base.OnClientDisconnect(conn);
-        var ioGamesRoom = GetComponent<IOGamesRoom>();
+        var ioGamesRoom = FindObjectOfType<IOGamesRoom>();
         if (ioGamesRoom != null)
             ioGamesRoom.ClientDisconnected(conn);
     }

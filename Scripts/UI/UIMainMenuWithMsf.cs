@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Barebones.MasterServer;
+using Barebones.Networking;
 
 public class UIMainMenuWithMsf : UIMainMenu
 {
     public UINetworkRoom networkRoomDialog;
+
     public void OnClickRoomList()
     {
         if (networkRoomDialog != null)
@@ -16,7 +18,5 @@ public class UIMainMenuWithMsf : UIMainMenu
     {
         var master = FindObjectOfType<MasterServerBehaviour>();
         master.StartServer();
-        var spawner = FindObjectOfType<SpawnerBehaviour>();
-        spawner.StartSpawner();
     }
 }

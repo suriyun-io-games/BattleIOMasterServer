@@ -12,4 +12,16 @@ public class GameNetworkManagerWithMsf : GameNetworkManager
         if (ioGamesRoom != null)
             ioGamesRoom.ClientDisconnected(conn);
     }
+
+    public void StartHostButQuitIfCannotListen()
+    {
+        if (StartHost() == null)
+            Application.Quit();
+    }
+
+    public void StartServerButQuitIfCannotListen()
+    {
+        if (!StartServer())
+            Application.Quit();
+    }
 }

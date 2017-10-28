@@ -19,9 +19,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4413485594714096}
-  - component: {fileID: 114704314607414556}
-  - component: {fileID: 114020342540127526}
-  - component: {fileID: 114981826349501462}
+  - component: {fileID: 114085698375777538}
+  - component: {fileID: 114746144003513282}
+  - component: {fileID: 114684208735877370}
   m_Layer: 0
   m_Name: GameNetworkManagerWithMsf
   m_TagString: Untagged
@@ -42,7 +42,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114020342540127526
+--- !u!114 &114085698375777538
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -63,7 +63,7 @@ MonoBehaviour:
   m_ShowGUI: 0
   m_OffsetX: 0
   m_OffsetY: 0
---- !u!114 &114704314607414556
+--- !u!114 &114684208735877370
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -71,7 +71,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1481371073510512}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cf42a448897d4f4bb96889d390c4363, type: 3}
+  m_Script: {fileID: 227461547, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+  showGUI: 0
+  offsetX: 0
+  offsetY: 0
+--- !u!114 &114746144003513282
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1481371073510512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6ea8cca155fb224e909d144aaf378e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_NetworkPort: 7777
@@ -86,19 +101,19 @@ MonoBehaviour:
   m_PlayerPrefab: {fileID: 0}
   m_AutoCreatePlayer: 1
   m_PlayerSpawnMethod: 0
-  m_OfflineScene: Home
-  m_OnlineScene: Battle
+  m_OfflineScene: HomeWithMsf
+  m_OnlineScene: BattleWithMsf
   m_SpawnPrefabs: []
-  m_CustomConfig: 1
-  m_MaxConnections: 100
+  m_CustomConfig: 0
+  m_MaxConnections: 4
   m_ConnectionConfig:
     m_PacketSize: 1440
     m_FragmentSize: 500
     m_ResendTimeout: 1200
-    m_DisconnectTimeout: 5000
-    m_ConnectTimeout: 5000
-    m_MinUpdateTimeout: 1
-    m_PingTimeout: 2500
+    m_DisconnectTimeout: 2000
+    m_ConnectTimeout: 2000
+    m_MinUpdateTimeout: 10
+    m_PingTimeout: 500
     m_ReducedPingTimeout: 100
     m_AllCostTimeout: 20
     m_NetworkDropThreshold: 5
@@ -131,12 +146,12 @@ MonoBehaviour:
     m_MaxTimerTimeout: 12000
     m_MinNetSimulatorTimeout: 1
     m_MaxNetSimulatorTimeout: 12000
-  m_Channels: 0400000001000000
+  m_Channels: 
   m_UseWebSockets: 0
   m_UseSimulator: 0
   m_SimulatedLatency: 1
   m_PacketLossPercentage: 0
-  m_MaxBufferedPackets: 512
+  m_MaxBufferedPackets: 16
   m_AllowFragmentation: 1
   m_MatchHost: mm.unet.unity3d.com
   m_MatchPort: 443
@@ -144,18 +159,3 @@ MonoBehaviour:
   matchSize: 4
   isNetworkActive: 0
   matchMaker: {fileID: 0}
---- !u!114 &114981826349501462
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1481371073510512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 227461547, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  manager: {fileID: 0}
-  showGUI: 0
-  offsetX: 0
-  offsetY: 0

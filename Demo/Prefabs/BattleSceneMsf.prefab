@@ -19,9 +19,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4525147118220046}
-  - component: {fileID: 114388687996618934}
+  - component: {fileID: 114816942143492908}
   m_Layer: 0
-  m_Name: UnetServerStarter
+  m_Name: IOGamesServerStarter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 114226122206119992}
   - component: {fileID: 114743278840712582}
   m_Layer: 0
-  m_Name: UnetGameRoom
+  m_Name: IOGamesRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -192,26 +192,6 @@ MonoBehaviour:
     i15: 76
   m_ServerOnly: 1
   m_LocalPlayerAuthority: 0
---- !u!114 &114388687996618934
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1020411034916406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dd646043838dce428b036e5f3cb42e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WarnIfNoConnectionObject: 1
-  LogLevel: 0
-  NetworkManager: {fileID: 0}
-  AutoStartSpawned: 1
-  AutoStartInEditor: 0
-  StartServerAsHost: 0
-  AutoJoinRoom: 0
-  StartMaster: 0
-  MasterServerObject: {fileID: 0}
 --- !u!114 &114613773532389392
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -278,3 +258,23 @@ MonoBehaviour:
   terminateWhenLastPlayerQuits: 1
   quitAppIfDisconnected: 1
   networkManager: {fileID: 0}
+--- !u!114 &114816942143492908
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1020411034916406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f51ac4eb6cce9458161f72e1cc5761, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WarnIfNoConnectionObject: 1
+  LogLevel: 3
+  NetworkManager: {fileID: 0}
+  AutoStartSpawned: 1
+  AutoStartInEditor: 0
+  StartServerAsHost: 0
+  AutoJoinRoom: 0
+  StartMaster: 0
+  MasterServerObject: {fileID: 0}

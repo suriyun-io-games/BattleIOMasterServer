@@ -154,6 +154,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79e35930c6dc32a49a331ea7b15a1d11, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &107703833 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114213689907235780, guid: d27508e6b57b81d4c94a7fb554cfe519,
+    type: 2}
+  m_PrefabInternal: {fileID: 621206054}
+  m_Script: {fileID: 11500000, guid: b6cb319bca8442d4aaaeca7a45825842, type: 3}
 --- !u!1001 &205600000
 Prefab:
   m_ObjectHideFlags: 0
@@ -862,12 +868,12 @@ Prefab:
     - target: {fileID: 224087902618832706, guid: d27508e6b57b81d4c94a7fb554cfe519,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 512
+      value: 264
       objectReference: {fileID: 0}
     - target: {fileID: 224087902618832706, guid: d27508e6b57b81d4c94a7fb554cfe519,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 300
+      value: 165
       objectReference: {fileID: 0}
     - target: {fileID: 224087902618832706, guid: d27508e6b57b81d4c94a7fb554cfe519,
         type: 2}
@@ -1768,6 +1774,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114749709587979546, guid: acbde4027868d76429191bb624204e61,
+        type: 2}
+      propertyPath: uiGameplay
+      value: 
+      objectReference: {fileID: 107703833}
     - target: {fileID: 114749709587979546, guid: acbde4027868d76429191bb624204e61,
         type: 2}
       propertyPath: characterSpawnAreas.Array.data[0]

@@ -460,7 +460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LogLevel: 3
   ReadMasterServerAddressFromCmd: 1
-  ServerIp: 127.0.0.1
+  ServerIp: 128.199.180.183
   ServerPort: 5000
   ConnectOnStart: 1
   MinTimeToConnect: 1
@@ -491,10 +491,11 @@ MonoBehaviour:
   scene:
     m_SceneAsset: {fileID: 102900000, guid: e8c3a1198fee2524dbb7ae789f2d58cc, type: 3}
     m_SceneName: BattleWithMsf
-  spawnSceneInEditor: 1
   roomName: Battle-
-  maxPlayers: 2
-  playersAmountToCreateNewRoom: 1
+  maxPlayers: 100
+  playersAmountToCreateNewRoom: 90
+  countPlayersToCreateNewRoomDuration: 3
+  startPort: 1500
 --- !u!114 &114928463317033030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -525,8 +526,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LogLevel: 3
   SpawnControllerLogLevel: 4
-  DefaultMachineIp: 127.0.0.1
-  DefaultExePath: ./Build.exe
+  DefaultMachineIp: 128.199.180.183
+  DefaultExePath: ./Build.x86_64
   DefaultSpawnInBatchmode: 0
   MaxSpawnedProcesses: 0
   SpawnWebglServers: 0

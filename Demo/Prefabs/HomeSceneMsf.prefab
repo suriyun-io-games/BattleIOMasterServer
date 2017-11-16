@@ -460,7 +460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LogLevel: 3
   ReadMasterServerAddressFromCmd: 1
-  ServerIp: 128.199.180.183
+  ServerIp: 127.0.0.1
   ServerPort: 5000
   ConnectOnStart: 1
   MinTimeToConnect: 1
@@ -526,7 +526,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LogLevel: 3
   SpawnControllerLogLevel: 4
-  DefaultMachineIp: 128.199.180.183
+  DefaultMachineIp: 127.0.0.1
   DefaultExePath: ./Build.x86_64
   DefaultSpawnInBatchmode: 0
   MaxSpawnedProcesses: 0

@@ -423,7 +423,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 51074387}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -464.99997, y: -15, z: 0}
+  m_LocalPosition: {x: -465.20834, y: -15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2009655305}
@@ -851,6 +851,11 @@ Prefab:
     - target: {fileID: 4205587303187378, guid: 51443e351783108489c9f849eeadc3c6, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114932510277083372, guid: 51443e351783108489c9f849eeadc3c6,
+        type: 2}
+      propertyPath: DefaultExePath
+      value: ./Build.exe
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 51443e351783108489c9f849eeadc3c6, type: 2}
@@ -5089,8 +5094,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 828723586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 188, y: 117.5, z: 0}
-  m_LocalScale: {x: 0.39166668, y: 0.39166668, z: 0.39166668}
+  m_LocalPosition: {x: 230.5, y: 144, z: 0}
+  m_LocalScale: {x: 0.48, y: 0.48, z: 0.48}
   m_Children:
   - {fileID: 2009655305}
   - {fileID: 1687643044}
@@ -6215,7 +6220,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1076212737}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -464.99997, y: -50, z: 0}
+  m_LocalPosition: {x: -465.20834, y: -50, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 651568990}
@@ -7278,7 +7283,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1241420513}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 479.99997, y: -300, z: 0}
+  m_LocalPosition: {x: 480.20834, y: -300, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 112099373}
@@ -7935,7 +7940,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1391149702}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 464.99997, y: -465, z: 0}
+  m_LocalPosition: {x: 465.20834, y: -465, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2130009580}
@@ -8057,7 +8062,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1405459893}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 464.99997, y: -545, z: 0}
+  m_LocalPosition: {x: 465.20834, y: -545, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1687720472}
@@ -9397,7 +9402,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1642426272}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 464.99997, y: -15, z: 0}
+  m_LocalPosition: {x: 465.20834, y: -15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 33007799}
@@ -10674,18 +10679,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: OnInputNameChanged
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.InputField+OnChangeEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
@@ -12195,6 +12189,15 @@ MonoBehaviour:
   textSelectCharacter: {fileID: 696706188}
   textSelectHead: {fileID: 410816047}
   textSelectWeapon: {fileID: 1097211174}
+  textHp: {fileID: 0}
+  textAttack: {fileID: 0}
+  textDefend: {fileID: 0}
+  textMoveSpeed: {fileID: 0}
+  textExpRate: {fileID: 0}
+  textScoreRate: {fileID: 0}
+  textHpRecoveryRate: {fileID: 0}
+  textDamageRateLeechHp: {fileID: 0}
+  textSpreadDamages: {fileID: 0}
   inputName: {fileID: 1824152926}
   characterModelTransform: {fileID: 722984679}
   onlineNetworkAddress: 
@@ -12618,7 +12621,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2055278813}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -479.99997, y: -300, z: 0}
+  m_LocalPosition: {x: -480.20834, y: -300, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 886804990}

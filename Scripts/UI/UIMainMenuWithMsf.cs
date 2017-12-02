@@ -13,6 +13,7 @@ public class UIMainMenuWithMsf : UIMainMenu
         PlayerSave.SetCharacter(SelectCharacter);
         PlayerSave.SetHead(SelectHead);
         PlayerSave.SetWeapon(SelectWeapon);
+        PlayerSave.SetPlayerName(inputName.text);
         if (networkRoomDialog != null)
             networkRoomDialog.Show();
     }
@@ -22,6 +23,7 @@ public class UIMainMenuWithMsf : UIMainMenu
         PlayerSave.SetCharacter(SelectCharacter);
         PlayerSave.SetHead(SelectHead);
         PlayerSave.SetWeapon(SelectWeapon);
+        PlayerSave.SetPlayerName(inputName.text);
         var master = FindObjectOfType<MasterServerBehaviour>();
         master.StartServer();
     }

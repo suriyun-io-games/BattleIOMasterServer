@@ -7675,16 +7675,6 @@ Prefab:
       propertyPath: uiCreateGameProgress
       value: 
       objectReference: {fileID: 1798371106}
-    - target: {fileID: 114208404142829194, guid: 9e8e9fd915715c641b37bd0a8bb9f25e,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114402477225396004, guid: 9e8e9fd915715c641b37bd0a8bb9f25e,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9e8e9fd915715c641b37bd0a8bb9f25e, type: 2}
   m_IsPrefabParent: 0

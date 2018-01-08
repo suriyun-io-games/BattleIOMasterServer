@@ -5649,7 +5649,7 @@ Prefab:
     - target: {fileID: 114722058962677908, guid: d0d6bb1a6f36fb84bb0b6dbeff267bae,
         type: 2}
       propertyPath: onPurchaseFail.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114722058962677908, guid: d0d6bb1a6f36fb84bb0b6dbeff267bae,
         type: 2}
@@ -5803,7 +5803,7 @@ Prefab:
     - target: {fileID: 114137691030479462, guid: 94c82c27ee895b84cb39792a09e36849,
         type: 2}
       propertyPath: onPurchaseFail.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114137691030479462, guid: 94c82c27ee895b84cb39792a09e36849,
         type: 2}
